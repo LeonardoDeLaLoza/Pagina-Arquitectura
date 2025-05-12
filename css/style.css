@@ -204,7 +204,21 @@ img{
     background-position: bottom center;
 
 }
+@media (min-width: 992px){
+    .nosotros{
+        grid-template-columns: repeat(3,1fr);
+    }
+} 
 .contenido-nosotros{
     background-color: var(--blanco);
     padding: 5rem;
+}
+@media (min-width: 768px){
+    .contenido-nosotros{
+        grid-column: 2/4;
+    }
+} 
+
+.contenido-nosotros h2, .contenido-nosotros p{
+    margin-bottom: 1rem;
 }
